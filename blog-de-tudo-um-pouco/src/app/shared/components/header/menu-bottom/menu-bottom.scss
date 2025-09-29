@@ -1,19 +1,57 @@
-.menu-bottom{
+.menu-bottom {
     background-color: #292121;
-    &_list{
-        display: flex;
-        list-style: none;
-        li{
-            padding: 15px 57px;
-            &:first-child{
+    
+    &_button {
+        background-color: #FE5555;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 1em;
+        
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    
+    &_list {
+        display: none;
+        
+        li {
+            padding: 1em 0.85em;
+            
+            &:first-child {
                 background-color: #FE5555;
             }
-            a{
+            
+            a {
                 color: #fff;
                 font-size: 14px;
                 font-weight: 600;
                 text-decoration: none;
             }
+        }
+        
+        @media (min-width: 992px) {
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            
+            li {
+                padding: 15px 0.55em;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            
+            li {
+                padding: 15px 1em;
+            }
+        }
+        
+        // New: Styles for toggled state on small screens
+        &.show {
+            display: block;
         }
     }
 }

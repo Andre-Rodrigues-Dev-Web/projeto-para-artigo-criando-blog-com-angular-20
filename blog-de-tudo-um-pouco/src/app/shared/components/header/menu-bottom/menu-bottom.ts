@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './menu-bottom.scss'
 })
 export class MenuBottom {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    if (window.innerWidth < 768) {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
+  }
 }

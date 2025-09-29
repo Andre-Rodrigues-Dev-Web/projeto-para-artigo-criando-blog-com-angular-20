@@ -1,5 +1,8 @@
 <nav class="menu-bottom">
-    <ul class="menu-bottom_list">
+    <button class="menu-bottom_button" (click)="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="menu-bottom_list" [class.show]="isMenuOpen">
         <li><a href="#">Home</a></li>
         <li><a href="#">Notícias</a></li>
         <li><a href="#">Receitas</a></li>
@@ -16,4 +19,3 @@
         <li><a href="#">História</a></li>
     </ul>
 </nav>
-
