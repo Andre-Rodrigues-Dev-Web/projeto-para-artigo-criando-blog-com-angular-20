@@ -1,0 +1,40 @@
+.topmenu{
+    background-color: #fff;
+    &_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        @media(min-width: 768px){
+            width: 768px;
+        }
+        @media(min-width: 992px){
+            width: 992px;
+        }
+        @media(min-width: 1200px){
+            width: 96%;
+        }
+    }
+    &_list{
+        display: flex;
+        list-style: none;
+        li{
+            a{
+                color: #000;
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+    }
+    &_actions{
+        display: flex;
+        li{
+            a{
+                text-decoration: none;
+                i{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
