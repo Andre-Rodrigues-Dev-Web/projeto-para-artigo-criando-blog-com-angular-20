@@ -5,11 +5,12 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
+        padding: 0.8em 0;
         @media(min-width: 768px){
-            width: 768px;
+            width: 96%;
         }
         @media(min-width: 992px){
-            width: 992px;
+            width: 96%;
         }
         @media(min-width: 1200px){
             width: 96%;
@@ -28,13 +29,28 @@
     }
     &_actions{
         display: flex;
+        gap: 0.2em;
         li{
             a{
                 text-decoration: none;
                 i{
                     color: #000;
+                    font-size: 20px;
                 }
             }
+        }
+    }
+    @media(min-width: 768px){
+        &_list{
+            gap: 1em;
+            li{
+                a{
+                    font-size: 1em;
+                }
+            }
+        }
+        &_actions{
+            gap: 0.4em;
         }
     }
 }

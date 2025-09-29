@@ -3,21 +3,35 @@
     align-items: center;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 0.5em 0;
     h1{
         font-size: 24px;
     }
     .banner{
+        background-color: #FE5555;
         img{
             width: 100%;
         }
     }
     @media(min-width: 768px){
-        width: 768px;
+        width: 90%;
+        .banner{
+            height: 100px;
+            width: 60%;
+        }
     }
     @media(min-width: 992px){
-        width: 992px;
+        width: 90%;
+        .banner{
+            height: 100px;
+            width: 60%;
+        }
     }
     @media(min-width: 1200px){
         width: 96%;
+        .banner{
+            height: 100px;
+            width: 60%;
+        }
     }
 }
